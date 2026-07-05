@@ -1,0 +1,23 @@
+[project]
+name = "celery-learning"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "omthorat-sdlc",email = "omthorat@sdlccorp.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi (>=0.139.0,<0.140.0)",
+    "uvicorn (>=0.50.0,<0.51.0)",
+    "celery (>=5.6.3,<6.0.0)",
+    "redis (>=8.0.1,<9.0.0)",
+    "pydantic (>=2.13.4,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "celery_learning", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
